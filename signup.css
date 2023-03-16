@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Yanone+Kaffeesatz:wght@400;700&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background-image: url('images/login_b.jpeg');
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin-bottom:50px ;
+    width: 380px;
+    height: 515px;
+    border-radius:5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+}
+
+.title {
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.title h2{
+    color: rgb(15, 15, 15);
+    font-family: 'Passion One', cursive;
+    font-size: 50px;
+    margin-bottom: 13px;
+}
+
+.main {
+    text-align: center;
+}
+
+.main input {
+    box-sizing: border-box;
+    width: 80%;
+    outline: none;
+    resize: none;
+    border: none;
+    /* border-bottom: 1px solid #ffb347; */
+    height: 40px;
+    background-color: white;
+    font-size: 13px;
+    padding-left: 40px;
+    margin-bottom: 25px;
+    color: rgb(37, 37, 44);
+    border-radius: 20px;
+}
+
+.main .pass {
+    margin-bottom: 40px;
+}
+
+.main span {
+    position: relative;
+}
+
+.main i{
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(15, 15, 15);
+}
+
+.main a {
+    margin-bottom: -15px;
+    border-radius: 60px;
+    padding: 8px 110px;
+}
+
+a {
+    color: rgb(15, 15, 15);
+    background-color: #ffb347;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    /* border: 1px solid rgb(15, 15, 15); */
+    text-decoration: none;
+    margin-top: 35px;
+    text-transform: capitalize;
+}
+
+
+
+a:hover {
+    background-color: #ffb347;
+    border: 2px solid rgb(15, 15, 15);
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(15, 15, 15);
+}
+
+.container {
+    display: flex;
+}
+
+.container p {
+    margin-top: 45px;
+    font-size: 14px;
+    margin-left: 15px;
+    color: #333;
+}
+
+.container a{
+    margin-top: 30px;
+}
+
+#con {
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 35px;
+    text-decoration: underline;
+    margin-left: 110px;
+}
+

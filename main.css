@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Yanone+Kaffeesatz:wght@400;700&display=swap%27');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Header section part 2 (nav) */
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffb347;
+    z-index: -2;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-top: 16px;
+    padding-left: 8%;
+    padding-right: 9%;
+}
+
+#pet{
+    font-size: 30px;
+    margin-left:-4px;
+    color: white;
+    font-family: 'Passion One', cursive;
+}
+
+nav ul li {
+    z-index: 2;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 35px;
+}
+
+.logo {
+    font-family: 'Passion One', cursive;
+    color: rgb(12, 8, 8);
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+nav ul li a {
+    z-index: 15;
+    color : rgb(7, 4, 4);
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: capitalize;
+    font-size: 13px;
+}
+
+.active {
+    text-decoration: underline white 2px;
+    color: black;
+    font-size: 15px;
+    text-underline-offset: 10px;
+}
+
+nav ul li .button{
+    background-color: rgb(15, 15, 15);
+    border: 1px solid rgb(15, 15, 15);
+    padding: 10px 34px;
+    border-radius: 40px;
+    font-size: 14px;
+    text-decoration: none;
+    color: lightgray;
+    margin-left: 90px;
+}
+
+nav ul li:hover {
+    z-index: 2;
+    text-decoration: underline rgb(245, 67, 3) 2px;
+    text-underline-offset: 10px;
+    cursor: pointer;
+    transform: scale(1.1) translateY(5px);
+    transition: .3s;
+}
+
+nav ul li .button:hover {
+    z-index: 2;
+    text-decoration: dotted;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    border : 1px solid rgb(15, 15, 15);
+}
+
+/* Header content part 2 */
+
+.content{
+    position: relative;
+    top: 27%;
+    left: 8%;
+}
+
+.content h3{
+    font-family: 'Passion One', cursive;
+    font-size: 58px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(15, 15, 15);
+    letter-spacing: 0.8px;
+}
+
+#welcome {
+    font-family: 'Passion One', cursive;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.8px;
+    margin-left: -8px;
+}
+
+.content p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+    width: 38%;
+}
+
+
+.content .btn{
+   
+    padding: 12px 25px;
+    background-color: rgb(15, 15, 15);
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 50px;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.content .btn2{
+    font-weight: bold;
+    background: transparent; 
+    color: white;
+    text-decoration: none;
+    margin-left: -1px;
+}
+
+
+.content .btn:hover{
+    background-color: transparent;
+    border: 1px solid rgb(15, 15, 15);
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(15, 15, 15);
+}
+
+.content .ic1{
+    margin-top: 50px;
+    width: 40px;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: -13px;
+}
+
+.img-container{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    height: 570px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.header-img {
+    position: absolute;
+    bottom: -14%;
+    right: 0%;
+    height: 800px;
+    z-index: 0
+}
+
+.header-img-blur{
+    position: absolute;
+    bottom: -22%;
+    right: 4%;
+    height: 800px;
+    z-index: 0;
+    opacity: 0.35;
+    filter:blur(25px) brightness(100%) saturate(120%);
+}
+
+/* About us section*/
+
+.about {
+    width: 100%;
+    padding: 120px 0px;
+    background-color: transparent;
+}
+
+.about #about-img {
+    border-radius: 20px;
+    height : auto;
+    width: 430px;
+}
+
+.about #about-img:hover {
+    transform: scale(1.04) translateY(5px);
+    transition: .3s;
+}
+
+.main{
+    width: 1130px;
+    height: 80vh;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text {
+    width: 550px;
+}
+
+#about-h2 {
+    color: black;
+    font-size: 70px;
+    text-transform: capitalize;
+    font-family: 'Passion One', cursive;
+}
+
+#about-h5{
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Passion One', cursive;
+}
+
+#about-p{
+    width: 100%;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+    justify-content: start;
+}
+
+#span1 {
+    color: #f09c27;
+    font-family: 'Passion One', cursive;
+}
+
+#span2{
+    color: #f09c27;
+}
+
+button {
+    background-color: #f09c27;
+    border: 1px solid #cc7802;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: .3s;
+    margin: 20px;
+    
+}
+
+button:hover {
+    background-color: rgb(15, 15, 15);
+    border: 2px solid rgb(15, 15, 15);
+    cursor: pointer;
+    color: white;
+}
+
+/* Services section */
+
+.services {
+    background-color: #ffb347;
+    width: auto;
+    padding: 80px 0px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Passion One', cursive;
+    margin-top: -10px;
+    margin-bottom: 60px;
+}
+
+#ti-serv{
+    color: rgb(15, 15, 15);
+    font-family: 'Passion One', cursive;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
+
+.icon {
+    height: 400px;
+    width: 335px;
+    background: rgb(15, 15, 15);
+    border-radius: 20px;
+    padding: 30px 35px;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.icon i {
+    font-size: 40px;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+}
+
+h5 {
+    color: #ffb347;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+
+.paragraph p {
+    color: white;
+    font-size: 14px;
+    justify-content: start;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.icon .button {
+    background: white;
+    border-radius: 20px;
+    color: rgb(15, 15, 15);
+    font-size: 17px;
+    padding: 8px 20px;
+    text-decoration: none;
+    border: 1px solid rgb(15, 15, 15);
+    font-weight: bold;
+    transition: .3s;
+}
+
+.icon .button:hover {
+    border: 1px solid #ffb347;
+    background: #ffb347;
+    cursor: pointer;
+    color: white;
+}
+
+/* Our Team Section */
+
+
+.team {
+    background-color: white;
+    width: auto;
+    padding: 80px 0px;
+}
+
+.title2 h2 {
+   
+    color: rgb(15, 15, 15);
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Passion One', cursive;
+    margin-top: -20px;
+    margin-bottom: 100px;
+}
+
+#teamm {
+    color: #ffb347;
+    font-family: 'Passion One', cursive;
+    padding-left: 10px;
+}
+
+.team-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px ;
+    margin-top: 30px;
+}
+
+
+
+.card {
+    border: 1px solid transparent;
+    text-align: center;
+    position: relative;
+    height: 360px;
+    width: 320px;
+    margin: 20px;
+    outline: none;
+    padding: 30px 35px;
+    border-radius: 10px;  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, 
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.img-team img{
+    border-radius: 50%;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: -100px;
+    border: 1px solid transparent;
+}
+
+.card h4 {
+    color: #ffb347;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Passion One', cursive;   
+}
+
+
+.card h5{
+    margin-top: 10px;
+    color: rgb(82, 78, 78);
+    font-size: 15px;   
+}
+
+.desc p{
+    color: rgb(15, 15, 15);
+    justify-content: start;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.logos i{
+    color: rgb(15, 15, 15);
+    font-size: 20px ;
+    padding-right: 14px;
+    margin-bottom: 12px;
+}
+
+
+
+     
+
+/* Contact me css */
+
+.contact-me {
+    width: 100%;
+    height: 270px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: #ffb347;
+}
+
+.contact-me p {
+    color: #ffb347;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Passion One', cursive;
+}
+
+#contact {
+    color: rgb(15, 15, 15);
+    font-family: 'Passion One', cursive;
+    font-size: 45px;
+}
+
+#f{
+    color: white;
+    font-family: 'Passion One', cursive;
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+.contact-me .button2 {
+    color: white;
+    background: rgb(15, 15, 15)                          ;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: .3s;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+.contact-me .button2:hover{
+    background-color: transparent;
+    border: 2px solid rgb(15, 15, 15);
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(15, 15, 15);
+}
+
+/* Footer Section */
+
+.footer{
+    width: 100vw;
+}
+
+.foot1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.part1{
+    width: 300px;
+    margin-left: -100px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.part1 h3{
+    font-family: 'Passion One', cursive;
+    font-size: 47px;
+    color: rgb(15, 15, 15);
+    text-transform: uppercase;
+}
+
+#pet2{
+    font-size: 35px;
+    margin-left:4px;
+    color: #ffb347;
+    font-family: 'Passion One', cursive;
+    text-transform: uppercase;
+}
+
+.part1 p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: rgb(24, 24, 24);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.icons i{
+    color: #ffb347;
+    margin-right: 16px;
+    font-size: 18px ;
+}
+
+.table {
+    display: flex;
+    width: 500px;
+    margin-top: 70px;
+    margin-bottom:40px;
+}
+
+.span-tab{
+    color: #ffb347;
+}
+
+.table ul{
+    width: 50%;
+    list-style: none;
+    color: rgb(15, 15, 15);
+    line-height: 1.7;
+    font-size: 14px;
+    padding: 0px 40px;
+    font-weight: 500;
+}
+
+
+.table li{
+    cursor: pointer;
+}
+
+.table li:hover{
+    text-decoration: underline;
+}
+
+
+hr {
+    border: 0.1px solid rgb(15, 15, 15);
+    margin: 30px auto;
+    width: 900px;
+}
+
+
+.foot2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    margin: 0px auto;
+    padding-bottom: 10px;
+}
+
+
+#logo2{
+    font-family: 'Passion One', cursive;
+    font-size: 45px;
+    color: rgb(15, 15, 15);
+    text-transform: uppercase;
+}
+
+#pet4{
+    font-size: 35px;
+    margin-left:4px;
+    color: #ffb347;
+    font-family: 'Passion One', cursive;
+    text-transform: uppercase;
+}
+
+.foot_button{
+    margin-left: 30px;
+}
+
+.foot_button button{
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: .3s;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(15, 15, 15);
+    
+}
+
+.foot_button button:hover {
+    background-color: #ffb347;
+    border: 2px solid rgb(15, 15, 15);
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(15, 15, 15);
+}
+
+
+
+.nav1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 25px;
+}
+
+.navv {
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#paw4{
+    margin-right: 10px;
+}
